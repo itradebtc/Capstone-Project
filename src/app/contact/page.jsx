@@ -1,0 +1,102 @@
+import React from 'react'
+import Image from 'next/image'
+import contactpic from '../images/contactus.jpeg'
+import {TiSocialFacebookCircular} from 'react-icons/ti'
+import {TbBrandInstagram} from 'react-icons/tb'
+import {TiSocialTwitterCircular} from 'react-icons/ti'
+import {SlLocationPin} from 'react-icons/sl'
+import {BsTelephone} from 'react-icons/bs'
+import {MdOutlineMailOutline} from 'react-icons/md'
+import { Luckiest_Guy } from 'next/font/google'
+
+const kan = Luckiest_Guy({subsets: ['latin'],
+weight: ['400']})
+
+export default function page() {
+  return (
+    <div className='px-24 py-10'>
+        <div className='flex gap-10 py-8'>
+            <div dir='ltr'>
+                <Image src={contactpic} alt='contactus' width={1131} height={1053} className='rounded-r-[200px]' />
+            </div>
+            <div className='space-y-4'>
+                <h2 className={`${kan.className} text-blue-800 text-2xl`}>Contact Us</h2>
+                <p>You have a question? We might just have answers. Send us a message to book an appointment</p>
+                <form action='' className='space-y-4'>
+                    <div className='flex flex-col'>
+                      <label className='py-2'>Name</label>
+                      <input type="text" placeholder="Enter your Name"  name="name" className="border-b-2 border-gray-25 outline-none" required />
+                    </div>
+                    <div className='flex flex-col'>
+                      <label className='py-2'>Email</label>
+                      <input type="email" placeholder="Enter a valid email address"  className="border-b-2 border-gray-25 outline-none" required />
+                    </div>
+                    <div className='flex flex-col u-form-group u-form-message mb-3'>
+                      <label>Message</label>
+                      <textarea placeholder="Enter your question/comment here" rows="4" cols="50" className="border-b-2 border-gray-25 outline-none h-[123px] pt-2" required ></textarea>
+                    </div>
+                    <button className='py-3 px-7 rounded-lg w-full'>Submit</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <div className="md:py-16 flex gap-16">
+                <div>
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.731982897961!2d-75.65839622442039!3d39.72320559755831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c701c7cd382ad3%3A0xf4e309d0af37fc1b!2sElgin%20St%2C%20Delaware%2019808%2C%20USA!5e0!3m2!1sen!2sng!4v1686768863400!5m2!1sen!2sng" 
+                    width="850" 
+                    height="450" 
+                    // style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                    <div>
+                        <div className='space-y-3'>
+                            <div className='flex items-center space-x-4'>
+                                <SlLocationPin size={20} className='text-blue-800'/>
+                                <p>
+                                6391 Elgin St. Celina, Delare 10299
+                                </p>
+                            </div>
+                            <div className='flex items-center space-x-4'>
+                                <BsTelephone size={20} className='text-blue-800' />
+                                <p>(239) 555-0108</p>
+                            </div>
+                            <div className='flex items-center space-x-4'>
+                                <MdOutlineMailOutline size={20} className='text-blue-800' />
+                                <p>admin@dental.co.uk</p>
+                            </div>
+                        </div>
+                        <div className='pt-7 space-y-3'>
+                            <p className={`${kan.className} uppercase text-blue-800`}>Go Social</p>
+                            <p>Follow us on social media for special offers/package!</p>
+                        </div>
+                    
+                        <div className='flex pt-4'>
+                            <ul className="flex text-blue-800">
+                                <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
+                                    <a href="https://www.facebook.com" target='_blank'>
+                                    <TiSocialFacebookCircular size={50} />
+                                    </a> 
+                                </li>
+                                <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
+                                    <a href="https://www.instagram.com" target='_blank'>
+                                    <TbBrandInstagram size={50} />
+                                    </a>
+                                </li>
+                                <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
+                                    <a href="https://www.twitter.com" target='_blank'> 
+                                    <TiSocialTwitterCircular size={50} />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+    </div>
+  )
+}
