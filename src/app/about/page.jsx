@@ -46,13 +46,13 @@ export default function page() {
                 <Image src={pic} alt='who is your dentist' width={650} height={400} />
             </div>
             <p>
-                <span className={`${kan.className} text-lg`}>At Kelubia's Dental Care</span>, we prioritize patient comfort and satisfaction. We understand that 
+                <span className={`${kan.className} text-lg`}>At Kelubia&#39;s Dental Care</span>, we prioritize patient comfort and satisfaction. We understand that 
                 visiting the dentist can cause anxiety for some individuals, which is why we strive to create 
                 a welcoming and relaxing atmosphere. Our friendly staff is here to answer your questions, 
                 address your concerns, and ensure you feel at ease throughout your dental visit.
                 We are dedicated to staying at the forefront of dental technology and techniques. By investing in 
                 state-of-the-art equipment and continuing education for our team, we can provide you with the highest 
-                standard of care and deliver optimal results.Experience exceptional dental care with our experienced team of doctors at Kelubia's Dental Care. 
+                standard of care and deliver optimal results.Experience exceptional dental care with our experienced team of doctors at Kelubia&#39;s Dental Care. 
                 Contact us today to schedule an appointment and take the first step towards achieving a healthy 
                 and beautiful smile.
             </p>
