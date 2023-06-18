@@ -40,7 +40,7 @@ export default function page() {
                   <dd>
                     <span className={`${kan.className} text-slate-500 text-lg`}>Prosthodontics:</span> Our prosthodontists specialize in the restoration and replacement of missing 
                     teeth. Whether you need dentures, dental implants, or implant-supported prosthetics, we can 
-                    help you regain your smile's function and aesthetics.
+                    help you regain your smile&#39;s function and aesthetics.
                   </dd>
                 </dl>
                 <Image src={pic} alt='who is your dentist' width={650} height={400} />

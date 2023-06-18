@@ -29,13 +29,13 @@ export default function Home() {
             </p>
           </div>
           <p className='pt-7 container'>
-          Welcome to Kelubia's Dental Care, your premier destination for comprehensive dental care. With our experienced team of dedicated dental professionals, we are committed to providing top-quality dental services to patients of all ages. Our goal is to create a positive and comfortable environment where you can receive personalized care tailored to your unique oral health needs.
+          Welcome to Kelubia&#39;s Dental Care, your premier destination for comprehensive dental care. With our experienced team of dedicated dental professionals, we are committed to providing top-quality dental services to patients of all ages. Our goal is to create a positive and comfortable environment where you can receive personalized care tailored to your unique oral health needs.
 
           </p>
               <Image src={pica} alt='dentist' 
               width={1131} height={4096} className='md:row-span-3 container'/>
           <p className='container'>
-          At Kelubia's Dental Care, we understand the importance of a healthy and beautiful smile. Our team consists of highly skilled and experienced dentists who stay abreast of the latest advancements in dentistry. From routine check-ups and preventive care to advanced restorative treatments, we offer a wide range of dental services to meet all of your oral health needs under one roof.
+          At Kelubia&#39;s Dental Care, we understand the importance of a healthy and beautiful smile. Our team consists of highly skilled and experienced dentists who stay abreast of the latest advancements in dentistry. From routine check-ups and preventive care to advanced restorative treatments, we offer a wide range of dental services to meet all of your oral health needs under one roof.
           </p>
           <div className='flex items-center space-x-8'>
             <Link href='/appointment'>
@@ -147,7 +147,7 @@ export default function Home() {
         </div>
         <div className='flex justify-center items-center bg-[#aeceee] border rounded-xl h-[296px] w-[1131px] relative top-14'>
           <div className='flex justify-around items-center gap-14'>
-            <p className='text-white text-4xl pr-14'>It's time to make that change <br /> in your life today</p> 
+            <p className='text-white text-4xl pr-14'>It&#39;s time to make that change <br /> in your life today</p> 
             <Link href='/appointment'>
             <button className='py-3 px-7 rounded-md'>Book Appointment</button>
             </Link>
