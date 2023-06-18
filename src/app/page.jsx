@@ -16,33 +16,39 @@ weight: ['400']})
 
 export default function Home() {
   return (
-    <div className='py-4 px-24'>
-        <div className='md:grid md:grid-cols-2 py-10 gap-4'>
-          <div className='md:col-span-2 md:text-7xl '>
-            <p className="text-blue-800 p-5 right-4 inline-block">
-              {/* <span className="relative inline-block">
-                <span className="text-white bg-red-300 py-5 p-1 transform -rotate-45 inline-flex rounded-xl mr-8">
-                  <span className="rotate-45 transform inline-block relative uppercase text-6xl">we</span>
-                </span>
-              </span> */}
-              
-              <span className={kan.className}>we find the best <br /> doctors for your dental <br /> surgery</span>
+    <div className='py-4 px-8 md:py-4 md:px-24'>
+        <div className='grid grid-cols-2 grid-rows-2 md:grid md:grid-cols-2 md:py-10 md:gap-4 space-y-3 md:space-x-0'>
+            <p className={`${kan.className} text-blue-800 col-span-2 md:col-span-2 text-2xl md:text-7xl `}>
+              we find the best <br /> doctors for your dental <br /> surgery
             </p>
-          </div>
-          <p className='pt-7 container'>
-          Welcome to Kelubia&#39;s Dental Care, your premier destination for comprehensive dental care. With our experienced team of dedicated dental professionals, we are committed to providing top-quality dental services to patients of all ages. Our goal is to create a positive and comfortable environment where you can receive personalized care tailored to your unique oral health needs.
-
+          {/* <div className='col-span-2 md:col-span-2 text-2xl md:text-7xl '>
+          </div> */}
+          <p className=' text-sm md:text-[18px] text-slate-800'>
+              Welcome to Kelubia&#39;s Dental Care, your premier destination for comprehensive dental care. 
+              With our experienced team of dedicated dental professionals, we are committed to providing 
+              top-quality dental services to patients of all ages. Our goal is to create a positive and 
+              comfortable environment where you can receive personalized care tailored to your unique oral 
+              health needs.
           </p>
-              <Image src={pica} alt='dentist' 
-              width={1131} height={4096} className='md:row-span-3 container'/>
-          <p className='container'>
-          At Kelubia&#39;s Dental Care, we understand the importance of a healthy and beautiful smile. Our team consists of highly skilled and experienced dentists who stay abreast of the latest advancements in dentistry. From routine check-ups and preventive care to advanced restorative treatments, we offer a wide range of dental services to meet all of your oral health needs under one roof.
+          <Image 
+            src={pica} 
+            alt='dentist' 
+            width="1131" 
+            height="4096" 
+            className='md:row-span-3 h-fit'
+          />
+          <p className='col-span-2 text-sm md:text-[18px] text-slate-800'>
+              At Kelubia&#39;s Dental Care, we understand the importance of a healthy and beautiful smile. 
+              Our team consists of highly skilled and experienced dentists who stay abreast of the latest 
+              advancements in dentistry. From routine check-ups and preventive care to advanced restorative 
+              treatments, we offer a wide range of dental services to meet all of your oral health needs 
+              under one roof.
           </p>
-          <div className='flex items-center md:space-x-8'>
+          <div className='flex col-span-2 items-center space-x-3 md:space-x-8'>
             <Link href='/appointment'>
-            <button className='border bg-blue-800 text-white py-4  px-8 rounded-md'>Book Appointment</button>
+            <button className='border bg-blue-800 text-white py-2 px-5 md:py-4 md:px-8 rounded-md'>Book Appointment</button>
             </Link>
-            <p>
+            <p className='text-[14px] md:text-[18px] text-slate-800'>
               Call: (239) 555-0108 <br />
               Email: admin@dental.co.uk
             </p>
