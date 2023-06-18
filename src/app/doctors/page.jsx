@@ -8,7 +8,7 @@ weight: ['400']})
 
 
         async function fetchdoctors(){
-          const response = fetch('https://itradebtc.github.io/dentistdata/dentist.json')
+          const response = fetch('https://itradebtc.github.io/dentistsdata/dentist.json')
         
           const data = await (await response).json()
         
@@ -21,7 +21,12 @@ weight: ['400']})
           const doctorslist = data2.doctors.map(doctors =>(
             <section key={doctors.id} className='px-4 hover:shadow-xl'>
               <Link href={`/doctors/${doctors.name}`}>
-                <Image src={doctors.photo} alt={doctors.name} width={300} height={300}  className='pb-2'/>
+                <Image src={doctors.photo} 
+                  alt={doctors.name} 
+                  width="600" 
+                  height="600" 
+                  className='pb-2'
+                />
                 <h2 className='text-lg '>{doctors.name} {doctors.surname}</h2>
                 <h3 className='text-sm text-slate-500'>{doctors.qualification} , {doctors.specialization}</h3>
               </Link>

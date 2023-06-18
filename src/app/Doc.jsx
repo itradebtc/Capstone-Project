@@ -5,7 +5,7 @@ import {BsArrowRightCircleFill} from 'react-icons/bs'
 
 
 async function fetchdoctors(){
-    const response = fetch('https://itradebtc.github.io/dentistdata/firstone.json')
+    const response = fetch('https://itradebtc.github.io/dentistsdata/firstone.json')
   
     const data = await (await response).json()
   

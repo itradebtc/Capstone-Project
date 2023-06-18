@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 
 async function fetchdoctors(){
-  const response = fetch('https://itradebtc.github.io/dentistdata/andrew.json')
+  const response = fetch('https://itradebtc.github.io/dentistsdata/andrew.json')
 
   const data = await (await response).json()
 
