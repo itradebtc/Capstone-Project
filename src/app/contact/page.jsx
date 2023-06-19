@@ -20,9 +20,9 @@ export default function page() {
                 <Image 
                     src={contactpic} 
                     alt='contactus' 
-                    width={1131} 
-                    height={1053} 
-                    className='md:rounded-r-[200px]' 
+                    width="1131" 
+                    height="1053" 
+                    className='md:rounded-r-[200px] w-fit md:w-[1131px]' 
                     />
             </div>
             <div className='md:space-y-4'>

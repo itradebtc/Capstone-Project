@@ -40,7 +40,7 @@ export default async function Page() {
     </section>
   ))
   return (
-    <div className='max-h-screen m-16'>
+    <div className='min-h-screen m-16'>
       {doctorslist}
     </div>
   )
