@@ -22,7 +22,7 @@ export default function page() {
                     alt='contactus' 
                     width="1131" 
                     height="1053" 
-                    className='md:rounded-r-[200px] w-fit md:w-[1131px]' 
+                    className='md:rounded-r-[200px] w-full md:w-[1131px]' 
                     />
             </div>
             <div className='md:space-y-4'>
@@ -41,7 +41,7 @@ export default function page() {
                       <label>Message</label>
                       <textarea placeholder="Enter your question/comment here" rows="4" cols="50" className="border-b-2 border-gray-25 outline-none h-[123px] pt-2" required ></textarea>
                     </div>
-                    <button className='py-3 px-7 rounded-lg w-full'>Submit</button>
+                    <button className='py-3 px-7 rounded-lg w-full md:w-full'>Submit</button>
                 </form>
             </div>
         </div>
