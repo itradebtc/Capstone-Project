@@ -15,21 +15,21 @@ export default async function Page() {
   const data2 = await fetchdoctors()
 
   const doctorslist = data2.doctors.map(doctors =>(
-    <section key={doctors.id} className='flex gap-10 p-6 rounded-md text-slate-500 bg-[#aeceee]'>
+    <section key={doctors.id} className='grid md:flex gap-10 p-6 rounded-md text-slate-500 bg-[#aeceee]'>
       <div className='container'>
         <Image src={doctors.photo} alt='pic' width={600} height={450} />
       </div>
       
       <div className='container space-y-4'>
         <div>
-          <h2>{doctors.name} {doctors.surname}</h2>
+          <h2 className='font-semibold'>{doctors.name} {doctors.surname}</h2>
           <h3>{doctors.age}</h3>
           <h3>{doctors.gender}</h3>
           <h3>{doctors.qualification}, {doctors.specialization}</h3>
         </div>
         <div>
-          <h3>Specialization:</h3>
-          <p>{doctors.specialization_description}</p>
+          <h3 className='font-semibold'>Specialization:</h3>
+          <p className='text-sm md:text-base'>{doctors.specialization_description}</p>
         </div>
         <div>
           <Link href='/appointment'>

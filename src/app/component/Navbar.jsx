@@ -66,31 +66,31 @@ const Navbar = () => {
             <div className='flex-col py-4'>
                 <ul>
                     <Link href='/'>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-blue-900'>
                         Home
                     </li>
                     </Link>
                     <Link href='/about'>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-blue-900'>
                         Our Services
                     </li>
                     </Link>
                     <Link href='/doctors'>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-blue-900'>
                         Our Team
                     </li>
                     </Link>
                     <Link href='/contact'>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-blue-900'>
                         Contact
                     </li>
                     </Link>
                 </ul>
             </div>
             <div className='flex flex-row justify-around pt-4 items-center'>
-                <TiSocialFacebookCircular size={30} className='cursor-pointer' />
-                <TbBrandInstagram size={30} className='cursor-pointer' />
-                <TiSocialTwitterCircular size={30} className='cursor-pointer' />
+                <TiSocialFacebookCircular size={30} className='cursor-pointer hover:text-blue-900' />
+                <TbBrandInstagram size={30} className='cursor-pointer hover:text-blue-900' />
+                <TiSocialTwitterCircular size={30} className='cursor-pointer hover:text-blue-900' />
             </div>
             <Link href='/'>
             <Image src={logo} alt='Logo' width="305" height="95"

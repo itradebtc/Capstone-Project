@@ -14,13 +14,19 @@ weight: ['400']})
 
 export default function page() {
   return (
-    <div className='px-24 py-10'>
-        <div className='flex gap-10 py-8'>
-            <div dir='ltr'>
-                <Image src={contactpic} alt='contactus' width={1131} height={1053} className='rounded-r-[200px]' />
+    <div className='px-7 md:px-24 md:py-10'>
+        <div className='grid md:flex md:gap-10 py-8'>
+            <div >
+                <Image 
+                    src={contactpic} 
+                    alt='contactus' 
+                    width={1131} 
+                    height={1053} 
+                    className='md:rounded-r-[200px]' 
+                    />
             </div>
-            <div className='space-y-4'>
-                <h2 className={`${kan.className} text-blue-800 text-2xl`}>Contact Us</h2>
+            <div className='md:space-y-4'>
+                <h2 className={`${kan.className} text-blue-800 text-2xl pt-3 md:pt-0`}>Contact Us</h2>
                 <p>You have a question? We might just have answers. Send us a message to book an appointment</p>
                 <form action='' className='space-y-4'>
                     <div className='flex flex-col'>
@@ -40,19 +46,19 @@ export default function page() {
             </div>
         </div>
         <div>
-            <div className="md:py-16 flex gap-16">
+            <div className="md:py-16 md:flex md:gap-16">
                 <div>
                     <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.731982897961!2d-75.65839622442039!3d39.72320559755831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c701c7cd382ad3%3A0xf4e309d0af37fc1b!2sElgin%20St%2C%20Delaware%2019808%2C%20USA!5e0!3m2!1sen!2sng!4v1686768863400!5m2!1sen!2sng" 
                     width="850" 
-                    height="450" 
-                    // style="border:0;" 
+                    height="450"
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
+                    className='w-full md:w-[850px]'
                     ></iframe>
                 </div>
-                    <div>
+                    <div className='py-4 md:py-0'>
                         <div className='space-y-3'>
                             <div className='flex items-center space-x-4'>
                                 <SlLocationPin size={20} className='text-blue-800'/>

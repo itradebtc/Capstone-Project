@@ -145,7 +145,7 @@ export default function Home() {
         </div>
           {/* fifth div */}
 
-        <div className='grid grid-cols-2 pt-10'>
+        <div className='grid md:grid-cols-2 pt-10'>
             <div className='text-lg md:text-4xl'>
                 <h2>Meet Our Qualified Doctors <br />& Get Treatment </h2>
             </div>

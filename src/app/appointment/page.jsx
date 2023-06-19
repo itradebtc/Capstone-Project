@@ -3,23 +3,23 @@ import styles from './app.module.css';
 
 export default function page() {
   return (
-    <div>
+    <div className='py-2 md:py-0'>
         <div className={styles.div}>
             <h2 className='flex text-3xl text-white justify-center items-center pt-16'>Request an Appointment</h2>
         </div>
-        <div className='py-14 px-36 mx-36 space-y-7'>
-            <h3 className='text-4xl'>Patients are seen by appointment only.</h3>
+        <div className='space-y-3 px-3 md:py-14 md:px-36 md:mx-36 md:space-y-7'>
+            <h3 className='text-2xl md:text-4xl'>Patients are seen by appointment only.</h3>
             <p className='border-t-4 border-purple-950 w-[65px]'>
             </p>
             <div className='border-b-2 border-dotted border-slate-300 w-fit'>
-                <p className='mb-4'>
-                We are an exceptional doctor’s office in that we generally run on or close to schedule. 
-                We ask that you arrive on <br /> time so we can maintain this commitment to keeping on schedule 
-                for all our patients. We require 48-hours’ notice for a cancellation so that we may offer 
+                <p className='mb-4 text-sm md:text-base'>
+                We are an exceptional doctor&#39;s office in that we generally run on or close to schedule. 
+                We ask that you arrive on time so we can maintain this commitment to keeping on schedule 
+                for all our patients. We require 48-hours notice for a cancellation so that we may offer 
                 the appointment to another patient.
                 </p>
             </div>
-            <div className='w-[40vw] border-dashed border-2 border-blue-100 rounded-md mx-36'>
+            <div className='w-full md:w-[40vw] border-dashed border-2 border-blue-100 rounded-md md:mx-36'>
                 <form action='' className='space-y-4 py-4 px-8'>
                     <div className='flex flex-col space-y-3'>
                         <label>Are You a New or Existing Patient? <span className='text-red-900 text-sm'>*</span> </label>

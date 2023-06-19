@@ -34,9 +34,9 @@ weight: ['400']})
             </section>
           ))
           return (
-            <div className='py-10 px-24'>
+            <div className='py-10 px-8 md:px-24'>
                 <h2 className={`${kan.className} text-center text-4xl py-2 uppercase`}>Our Doctors</h2>
-                <div className='grid grid-cols-3 gap-4 text-black  py-7 px-4'>
+                <div className='grid md:grid-cols-3 gap-4 text-black  py-7 px-4'>
                     {doctorslist}
                 </div>
          </div>
