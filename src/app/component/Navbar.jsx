@@ -28,28 +28,31 @@ const Navbar = () => {
             <div className='hidden sm:flex'>
                 <ul className='hidden sm:flex'>
                     <Link href='/'>
-                    <li className='ml-10 uppercase hover:border-b-2 text-lg'>Home</li>
+                    <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Home</li>
                     </Link>
                     <Link href='/about'>
-                    <li className='ml-10 uppercase hover:border-b-2 text-lg'>Our Services</li>
+                    <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Our Services</li>
                     </Link>
                     <Link href='/doctors'>
-                    <li className='ml-10 uppercase hover:border-b-2 text-lg'>Our Team</li>
+                    <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Our Team</li>
                     </Link>
                     <Link href='/contact'>
-                    <li className='ml-10 uppercase hover:border-b-2 text-lg'>Contact</li>
+                    <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Contact</li>
                     </Link>
-                    <li className='flex items-center mx-10 uppercase text-lg'>
-                            <select className='outline-none'>
+                    <Link href='/checker'>
+                    <li className='uppercase hover:border-b hover:text-[#00d2ff] text-lg'>
+                            {/* <select className='outline-none'>
                               <option value="English" selected>En</option>
                               <option value="French">Fr</option>
                               <option value="German">De</option>
-                            </select>
+                            </select> */}
+                            Health Checker
                     </li>
+                    </Link>
                 </ul>
             </div>
             <div onClick={handleNav} className='sm:hidden cursor-pointer pl-24'>
-                <GiHamburgerMenu size={25} />
+                <GiHamburgerMenu size={25} className='hover:text-[#00d2ff]' />
             </div>
         </div>
         <div className={
@@ -60,37 +63,42 @@ const Navbar = () => {
         >
         <div className='flex w-full items-center justify-end'>
             <div onClick={handleNav} className='cursor-pointer'>
-                <MdOutlineClose size={25} />
+                <MdOutlineClose size={25} className='hover:text-[#00d2ff]'/>
             </div>
         </div>
             <div className='flex-col py-4'>
                 <ul>
                     <Link href='/'>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-blue-900'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Home
                     </li>
                     </Link>
                     <Link href='/about'>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-blue-900'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Our Services
                     </li>
                     </Link>
                     <Link href='/doctors'>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-blue-900'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Our Team
                     </li>
                     </Link>
                     <Link href='/contact'>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-blue-900'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Contact
+                    </li>
+                    </Link>
+                    <Link href='/checker'>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
+                        Health Checker
                     </li>
                     </Link>
                 </ul>
             </div>
             <div className='flex flex-row justify-around pt-4 items-center'>
-                <TiSocialFacebookCircular size={30} className='cursor-pointer hover:text-blue-900' />
-                <TbBrandInstagram size={30} className='cursor-pointer hover:text-blue-900' />
-                <TiSocialTwitterCircular size={30} className='cursor-pointer hover:text-blue-900' />
+                <TiSocialFacebookCircular size={30} className='cursor-pointer hover:text-[#00d2ff]' />
+                <TbBrandInstagram size={30} className='cursor-pointer hover:text-[#00d2ff]' />
+                <TiSocialTwitterCircular size={30} className='cursor-pointer hover:text-[#00d2ff]' />
             </div>
             <Link href='/'>
             <Image src={logo} alt='Logo' width="305" height="95"

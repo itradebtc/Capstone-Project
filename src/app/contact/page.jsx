@@ -61,18 +61,18 @@ export default function page() {
                     <div className='py-4 md:py-0'>
                         <div className='space-y-3'>
                             <div className='flex items-center space-x-4'>
-                                <SlLocationPin size={20} className='text-blue-800'/>
+                                <SlLocationPin size={20} className='text-blue-800 hover:text-[#00d2ff]'/>
                                 <p>
                                 6391 Elgin St. Celina, Delare 10299
                                 </p>
                             </div>
                             <div className='flex items-center space-x-4'>
-                                <BsTelephone size={20} className='text-blue-800' />
-                                <p>(239) 555-0108</p>
+                                <BsTelephone size={20} className='text-blue-800 hover:text-[#00d2ff]' />
+                                <p><a href={`tel:${'(239) 555-0108'}`}>(239) 555-0108</a></p>
                             </div>
                             <div className='flex items-center space-x-4'>
-                                <MdOutlineMailOutline size={20} className='text-blue-800' />
-                                <p>admin@dental.co.uk</p>
+                                <MdOutlineMailOutline size={20} className='text-blue-800 hover:text-[#00d2ff]' />
+                                <p><a href={`mailto:${'admin@dental.co.uk'}`}>admin@dental.co.uk</a></p>
                             </div>
                         </div>
                         <div className='pt-7 space-y-3'>

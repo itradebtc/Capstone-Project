@@ -5,7 +5,6 @@ import {TiSocialTwitterCircular} from 'react-icons/ti'
 import {TiSocialVimeoCircular} from 'react-icons/ti'
 
 export default function Footer() {
-    const year = new Date().getFullYear()
   return (
     <div>
         <div className='flex justify-between items-center px-3 py-2 md:py-16 md:px-36 bg-gray-100'>
@@ -21,7 +20,7 @@ export default function Footer() {
             </div>
             <div className='md:space-y-2'>
                 <p className='text-slate-500'>Contact</p>
-                <p className='text-[12px] md:text-lg'>(239) 555-0108</p>
+                <p className='text-[12px] md:text-lg'><a href={`tel:${'(239) 555-0108'}`}>(239) 555-0108</a></p>
                 <p className='text-slate-500'>Address</p>
                 <p className='text-[12px] md:text-lg'>6391 Elgin St. Celina, Delare <br />10299</p>
             </div>
@@ -31,15 +30,15 @@ export default function Footer() {
                 <p className='text-[12px] md:text-sm'>Terms & condition</p>
                 <p className='text-slate-500'>Follow</p>
                 <p className='flex space-x-3 cursor-pointer'>
-                    <TiSocialFacebookCircular size={20} />
-                    <TbBrandInstagram size={20} />
-                    <TiSocialTwitterCircular size={20} />
-                    <TiSocialVimeoCircular size={20} />
+                    <TiSocialFacebookCircular size={20} className='hover:text-[#00d2ff]'/>
+                    <TbBrandInstagram size={20} className='hover:text-[#00d2ff]'/>
+                    <TiSocialTwitterCircular size={20} className='hover:text-[#00d2ff]'/>
+                    <TiSocialVimeoCircular size={20} className='hover:text-[#00d2ff]'/>
                 </p>
             </div>
         </div>
         <div className='bg-blue-950 text-center text-[8px] md:text-sm text-white py-2'>
-            Copyright &copy; {year} Kelubia Dental Care - Yaba, Lagos - All rights Reserved
+            Copyright &copy; {new Date().getFullYear()} Kelubia&#39;s Dental Care - Yaba, Lagos - All rights Reserved
         </div>
     </div>
   )

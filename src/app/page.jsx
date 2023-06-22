@@ -13,7 +13,6 @@ import Doc from './Doc'
 const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
 
-
 export default function Home() {
   return (
     <div className='py-4 px-8 md:py-4 md:px-24'>
@@ -48,36 +47,36 @@ export default function Home() {
             <button className='border bg-blue-800 text-white py-2 px-5 md:py-4 md:px-8 rounded-md'>Book Appointment</button>
             </Link>
             <p className='text-[14px] md:text-[18px] text-slate-800'>
-              Call: (239) 555-0108 <br />
-              Email: admin@dental.co.uk
+              Call: <a href={`tel:${'(239) 555-0108'}`}>(239) 555-0108</a> <br />
+              Email: <a href={`mailto:${'admin@dental.co.uk'}`}>admin@dental.co.uk</a>
             </p>
           </div>
         </div>
           {/* second div */}
 
         <div className='grid grid-cols-2 grid-rows-2 pt-16 gap-3 md:flex md:gap-8 md:py-10 md:w-[1131px] md:pt-0'>
-          <div className='bg-indigo-300 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300'>
+          <div className='bg-indigo-300 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
             <div className='py-1 md:py-0 space-y-5 px-3'>
             <p className='flex justify-center items-center'> <TbDentalBroken size={30}/> </p>
             <p className='text-lg text-black font-semibold'>Cavity Filling</p>
             <p className='text-sm text-slate-500'>Cavities left untreated, leads to serious dental procedures, including root canals and tooth extractions.</p>
             </div>
           </div>
-          <div className='bg-teal-300 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300'>
+          <div className='bg-teal-300 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
             <div className='space-y-5 px-3'>
             <p className='flex justify-center items-center'> <TbDental size={30} /> </p>
             <p className='text-lg text-black font-semibold'>Fluoride Treatment</p>
             <p className='text-sm text-slate-500'>Fluoride joins the tooth structure when your teeth develop, making them less susceptible to bacteria & cavities.</p>
             </div>
           </div>
-          <div className='bg-lime-200 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300'>
+          <div className='bg-lime-200 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
             <div className='space-y-5 px-3'>
             <p className='flex justify-center items-center'> <FaTeethOpen size={30} /> </p>
             <p className='text-lg text-black font-semibold'>Dental Prevention</p>
             <p className='text-sm text-slate-500'>Preventive dentistry is the practice of caring for your teeth to keep them healthy, this prevents gum disease.</p>
             </div>
           </div>
-          <div className='bg-rose-200 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300'>
+          <div className='bg-rose-200 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
             <div className='space-y-5 px-3'>
             <p className='flex justify-center items-center'> <TbDentalOff size={30} /> </p>
             <p className='text-lg text-black font-semibold'>Tooth Extraction</p>

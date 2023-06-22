@@ -27,6 +27,6 @@ body {
 } */
 
 button {
-  @apply bg-blue-800 text-white hover:bg-[#fff] hover:text-blue-800 hover:border-blue-800
+  @apply bg-blue-800 text-white hover:bg-[#00d2ff] hover:text-[#fff] hover:border-blue-800
   hover:shadow-xl
 }
