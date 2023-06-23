@@ -40,7 +40,7 @@ const Navbar = () => {
                     <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Contact</li>
                     </Link>
                     <Link href='/checker'>
-                    <li className='uppercase hover:border-b hover:text-[#00d2ff] text-lg'>
+                    <li className='ml-10 mr-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>
                             {/* <select className='outline-none'>
                               <option value="English" selected>En</option>
                               <option value="French">Fr</option>

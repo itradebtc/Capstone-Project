@@ -8,7 +8,7 @@
         width: 18em;
     }
     .pee{
-        background: -webkit-linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
+        background: -webkit-linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(31,16,127) 103.9% );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -23,7 +23,7 @@
         width: 35em;
     }
     .pee{
-        background: -webkit-linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
+        background: -webkit-linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(31,16,127) 103.9% );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }

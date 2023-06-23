@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Doctorswipe from '../../component/Doctorswipe'
 
 
 async function fetchdoctors(){
@@ -42,6 +43,9 @@ export default async function Page() {
   return (
     <div className='min-h-screen m-16'>
       {doctorslist}
+      <div className='pt-28'>
+        <Doctorswipe />
+      </div>
     </div>
   )
 }
