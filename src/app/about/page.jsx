@@ -1,7 +1,7 @@
 import React from 'react'
 import { Luckiest_Guy } from 'next/font/google'
 import Image from 'next/image'
-import pic from '../images/aboutus.jpeg'
+import pic from '../images/services1.jpg'
 
 const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
@@ -9,44 +9,49 @@ weight: ['400']})
 export default function page() {
   return (
     <div className='py-10 px-10 md:px-24'>
-        <h1 className={`${kan.className} text-center uppercase text-2xl md:text-4xl`}>Our Services</h1>
-        <div className='md:m-7 md:space-y-10 w-fit'>
-            <div className='md:flex md:gap-4'>
-                <dl className='space-y-4 md:container'>
+        <h1 className={`${kan.className} text-center text-blue-900 uppercase text-2xl md:text-4xl`}>Our Services</h1>
+        <div className='md:m-7 md:space-y-10 container md:text-[19px]'>
+            <div className='md:flex md:space-x-12'>
+                <dl className='space-y-4 md:w-[70%]'>
                   <dd>
-                    <span className={`${kan.className} md:text-lg`}>Preventive Dentistry:</span> We believe prevention is the key to maintaining optimal oral health. 
+                    <span className={`${kan.className} md:text-lg text-blue-900`}>Preventive Dentistry:</span> We believe prevention is the key to maintaining optimal oral health.
                     Our preventive services include thorough dental exams, professional cleanings, fluoride 
                     treatments, sealants, and patient education to help you achieve and maintain a healthy smile.
                   </dd>
                   <dd>
-                    <span className={`${kan.className} md:text-lg`}>Restorative Dentistry:</span> Whether you require a dental filling, crown, bridge, or implant, our 
+                    <span className={`${kan.className} md:text-lg text-blue-900`}>Restorative Dentistry:</span> Whether you require a dental filling, crown, bridge, or implant, our 
                     skilled dentists use state-of-the-art techniques and high-quality materials to restore the 
                     function and aesthetics of your teeth, ensuring long-lasting results.
                   </dd>
                   <dd>
-                    <span className={`${kan.className} md:text-lg`}>Cosmetic Dentistry:</span> Enhance the beauty of your smile with our cosmetic dental services. From
+                    <span className={`${kan.className} md:text-lg text-blue-900`}>Cosmetic Dentistry:</span> Enhance the beauty of your smile with our cosmetic dental services. From
                     teeth whitening and porcelain veneers to orthodontic treatments and smile makeovers, we can 
                     help you achieve the smile of your dreams.
                   </dd>
                   <dd>
-                    <span className={`${kan.className} md:text-lg`}>Periodontal Care:</span> Our team is experienced in diagnosing and treating gum disease. We offer 
+                    <span className={`${kan.className} md:text-lg text-blue-900`}>Periodontal Care:</span> Our team is experienced in diagnosing and treating gum disease. We offer 
                     non-surgical and surgical periodontal therapies to restore gum health and prevent further 
                     complications.
                   </dd>
                   <dd>
-                    <span className={`${kan.className} md:text-lg`}>Oral Surgery:</span> When necessary, our oral surgeons perform extractions, including wisdom teeth 
+                    <span className={`${kan.className} md:text-lg text-blue-900`}>Oral Surgery:</span> When necessary, our oral surgeons perform extractions, including wisdom teeth 
                     extractions, as well as other oral surgical procedures with precision and care.
                   </dd>
                   <dd>
-                    <span className={`${kan.className} md:text-lg`}>Prosthodontics:</span> Our prosthodontists specialize in the restoration and replacement of missing 
+                    <span className={`${kan.className} md:text-lg text-blue-900`}>Prosthodontics:</span> Our prosthodontists specialize in the restoration and replacement of missing 
                     teeth. Whether you need dentures, dental implants, or implant-supported prosthetics, we can 
                     help you regain your smile&#39;s function and aesthetics.
                   </dd>
                 </dl>
-                <Image src={pic} alt='who is your dentist' width={650} height={400}  />
+                <Image 
+                  src={pic} 
+                  alt='who is your dentist' 
+                  width="420" 
+                  height="200" 
+                  className='border-2 rounded-tr-[80px] rounded-bl-[80px]' />
             </div>
             <p className='pt-4 md:pt-0'>
-                <span className={`${kan.className} md:text-lg`}>At Kelubia&#39;s Dental Care</span>, we prioritize patient comfort and satisfaction. We understand that 
+                <span className={`${kan.className} md:text-lg text-blue-900`}>At Kelubia&#39;s Dental Care</span>, we prioritize patient comfort and satisfaction. We understand that 
                 visiting the dentist can cause anxiety for some individuals, which is why we strive to create 
                 a welcoming and relaxing atmosphere. Our friendly staff is here to answer your questions, 
                 address your concerns, and ensure you feel at ease throughout your dental visit.

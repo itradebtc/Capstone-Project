@@ -54,7 +54,7 @@ export default function page() {
                     height="450"
                     allowfullscreen="" 
                     loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"
+                    // referrerpolicy="no-referrer-when-downgrade"
                     className='w-full md:w-[850px]'
                     ></iframe>
                 </div>
@@ -83,17 +83,17 @@ export default function page() {
                         <div className='flex pt-4'>
                             <ul className="flex text-blue-800">
                                 <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
-                                    <a href="https://www.facebook.com" target='_blank'>
+                                    <a href="https://www.facebook.com" target='_blank' rel='noreferrer' title='Our facebook page'>
                                     <TiSocialFacebookCircular size={50} />
                                     </a> 
                                 </li>
                                 <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
-                                    <a href="https://www.instagram.com" target='_blank'>
+                                    <a href="https://www.instagram.com" target='_blank' rel='noreferrer' title='Our instagram handle'>
                                     <TbBrandInstagram size={50} />
                                     </a>
                                 </li>
                                 <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
-                                    <a href="https://www.twitter.com" target='_blank'> 
+                                    <a href="https://www.twitter.com" target='_blank' rel='noreferrer' title='Our twitter handle'> 
                                     <TiSocialTwitterCircular size={50} />
                                     </a>
                                 </li>

@@ -33,7 +33,7 @@ export default async function Page() {
           <p className='text-sm md:text-base'>{doctors.specialization_description}</p>
         </div>
         <div>
-          <Link href='/appointment'>
+          <Link href='/appointment' passHref>
           <button className='py-3 px-6 rounded-md'>Book an appointment</button>
           </Link>
         </div>

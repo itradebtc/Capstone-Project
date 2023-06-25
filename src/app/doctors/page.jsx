@@ -20,7 +20,7 @@ weight: ['400']})
         
           const doctorslist = data2.doctors.map(doctors =>(
             <section key={doctors.id} className='px-4 hover:shadow-xl'>
-              <Link href={`/doctors/${doctors.name}`}>
+              <Link href={`/doctors/${doctors.name}`} title={`Get more information on ${doctors.name} ${doctors.surname}`} passHref>
                 <Image src={doctors.photo} 
                   alt={doctors.name} 
                   width="600" 

@@ -9,7 +9,7 @@ const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
 
 
-export default function page() {
+export default function Page() {
   const [weight, setWeight] = useState(0)
   const [height, setHeight] = useState(0)
   const [bmi, setBmi] = useState('')

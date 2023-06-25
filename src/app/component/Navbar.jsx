@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className='w-full h-24 shadow-xl bg-white'>
         <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
-            <Link href='/'>
+            <Link href='/' passHref>
             <Image src={logo} alt='Logo' width="205" height="75"
             className='cursor-pointer'
             priority
@@ -27,19 +27,19 @@ const Navbar = () => {
             </Link>
             <div className='hidden sm:flex'>
                 <ul className='hidden sm:flex'>
-                    <Link href='/'>
+                    <Link href='/' passHref>
                     <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Home</li>
                     </Link>
-                    <Link href='/about'>
+                    <Link href='/about' passHref>
                     <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Our Services</li>
                     </Link>
-                    <Link href='/doctors'>
+                    <Link href='/doctors' passHref>
                     <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Our Team</li>
                     </Link>
-                    <Link href='/contact'>
+                    <Link href='/contact' passHref>
                     <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Contact</li>
                     </Link>
-                    <Link href='/checker'>
+                    <Link href='/checker' passHref>
                     <li className='ml-10 mr-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>
                             {/* <select className='outline-none'>
                               <option value="English" selected>En</option>
@@ -68,27 +68,27 @@ const Navbar = () => {
         </div>
             <div className='flex-col py-4'>
                 <ul>
-                    <Link href='/'>
+                    <Link href='/' passHref>
                     <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Home
                     </li>
                     </Link>
-                    <Link href='/about'>
+                    <Link href='/about' passHref>
                     <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Our Services
                     </li>
                     </Link>
-                    <Link href='/doctors'>
+                    <Link href='/doctors' passHref>
                     <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Our Team
                     </li>
                     </Link>
-                    <Link href='/contact'>
+                    <Link href='/contact' passHref>
                     <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Contact
                     </li>
                     </Link>
-                    <Link href='/checker'>
+                    <Link href='/checker' passHref>
                     <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Health Checker
                     </li>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <TbBrandInstagram size={30} className='cursor-pointer hover:text-[#00d2ff]' />
                 <TiSocialTwitterCircular size={30} className='cursor-pointer hover:text-[#00d2ff]' />
             </div>
-            <Link href='/'>
+            <Link href='/' passHref>
             <Image src={logo} alt='Logo' width="305" height="95"
             className='cursor-pointer '
             priority

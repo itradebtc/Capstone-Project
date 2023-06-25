@@ -43,7 +43,7 @@ export default function Home() {
               under one roof.
           </p>
           <div className='flex md:col-span-1 items-center space-x-3 md:space-x-8'>
-            <Link href='/appointment'>
+            <Link href='/appointment' passHref>
             <button className='border bg-blue-800 text-white py-2 px-5 md:py-4 md:px-8 rounded-md'>Book Appointment</button>
             </Link>
             <p className='text-[14px] md:text-[18px] text-slate-800'>
@@ -103,8 +103,7 @@ export default function Home() {
                 width="1131" 
                 height="490" 
                 src="https://www.youtube.com/embed/Mi7LMyhLpAg" 
-                title="YouTube video player" 
-                frameborder="0" 
+                title="YouTube video player"  
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                 className='w-full'
               ></iframe>
@@ -136,7 +135,7 @@ export default function Home() {
                 What are the advantages over traditional braces
               </li>
             </ul>
-            <Link href='/contact'>
+            <Link href='/contact' passHref>
             <button className='py-3 px-8 rounded-lg'>Contact us</button>
             </Link>
 
@@ -164,7 +163,7 @@ export default function Home() {
         <div className='flex justify-center items-center px-4 md:px-0 bg-[#aeceee] border rounded-xl w-fit h-[150px] md:h-[296px] md:w-[1131px] md:relative top-14'>
           <div className='flex -col md:flex justify-around items-center md:gap-14'>
             <p className='text-white text-[12px] md:text-4xl pr-14'>It&#39;s time to make that change <br /> in your life today</p> 
-            <Link href='/appointment'>
+            <Link href='/appointment' passHref>
             <button className='py-1 px-4 md:py-3 md:px-7 rounded-md'>Book Appointment</button>
             </Link>
           </div>
