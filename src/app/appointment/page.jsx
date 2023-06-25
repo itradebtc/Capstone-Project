@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from './app.module.css';
+import { PageWrapper } from '../page-wrapper';
 
 export default function page() {
   return (
     <div className='py-2 md:py-0'>
+      <PageWrapper>
         <div className={styles.div}>
             <h2 className='flex text-3xl text-white justify-center items-center pt-16'>Request an Appointment</h2>
         </div>
@@ -49,6 +51,7 @@ export default function page() {
                 </form>
             </div>
         </div>
+      </PageWrapper>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import styles from './bmi.module.css'
 import { Luckiest_Guy } from 'next/font/google'
 import Image from 'next/image'
 import { useState } from 'react'
+import { PageWrapper } from '../page-wrapper'
 
 const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
@@ -58,6 +59,7 @@ let imgSrc;
 
   return (
     <div className='h-[100vh] md:h-[130vh] px-10 bg-[#00d2ff]'>
+      <PageWrapper>
       <div>
         <h2 className={`${kan.className} text-4xl text-blue-800 pt-8`}>Adult BMI Calculator</h2>
         <p className='text-white text-[12px] md:text-xl pb-3 md:pb-0'>
@@ -108,6 +110,7 @@ let imgSrc;
           </div>
         </div>  
       </div>
+      </PageWrapper>
     
     </div>
   )

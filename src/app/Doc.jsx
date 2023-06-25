@@ -26,20 +26,20 @@ async function fetchdoctors(){
             ))
           return (
             <div className='pb-12 md:pb-0'>
-                <div className='grid md:grid-cols-3 gap-2 text-black'>
+                <div className='grid md:grid-cols-3 gap-2 text-black hover:ease-in duration-300'>
                     {list}
                     <Link href='./doctors' passHref>
                       <div className='bg-red-200 hover:text-white sm:grid justify-center items-center w-fit hidden md:h-[210px] md:w-[300px] border-2'>
                           <div className='space-y-5'>
                               <p className='text-center'>View More <br /> Qualified Doctors</p>
                               <div className='flex justify-center items-center'>
-                                 <BsArrowRightCircleFill size={65} className='border rounded-full text-blue-800 hover:border-blue-950 hover:animate-[pulse_3s_ease-in-out_infinite]' />
+                                 <BsArrowRightCircleFill size={65} className='border rounded-full text-blue-800 hover:border-blue-950 hover:scale-110 hover:ease-in duration-300' />
                               </div>
                           </div>
                       </div>
                       <div className='flex items-center space-x-2 md:hidden pt-2'>
-                        <h3 className='font-semibold text-center '>View More Doctors</h3>
-                        <BsArrowRightCircleFill size={20} className='rounded-full hover:border-blue-950' />
+                        <h3 className='font-semibold text-center hover:underline'>View More Doctors</h3>
+                        <BsArrowRightCircleFill size={20} className='rounded-full hover:border-blue-950 hover:underline' />
                       </div>
                     </Link>
                 </div>

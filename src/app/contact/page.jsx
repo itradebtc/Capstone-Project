@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import contactpic from '../images/contactus.jpeg'
+import contactpic2 from '../images/contactpic2.png'
 import {TiSocialFacebookCircular} from 'react-icons/ti'
 import {TbBrandInstagram} from 'react-icons/tb'
 import {TiSocialTwitterCircular} from 'react-icons/ti'
@@ -8,6 +10,8 @@ import {SlLocationPin} from 'react-icons/sl'
 import {BsTelephone} from 'react-icons/bs'
 import {MdOutlineMailOutline} from 'react-icons/md'
 import { Luckiest_Guy } from 'next/font/google'
+import { PageWrapper } from '../page-wrapper'
+import { motion } from 'framer-motion'
 
 const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
@@ -15,15 +19,26 @@ weight: ['400']})
 export default function page() {
   return (
     <div className='px-7 md:px-24 md:py-10'>
+        <PageWrapper>
         <div className='grid md:flex md:gap-10 py-8'>
-            <div >
+            <div className='overflow-hidden relative'>
                 <Image 
                     src={contactpic} 
                     alt='contactus' 
                     width="1131" 
                     height="1053" 
                     className='md:rounded-r-[200px] w-full md:w-[1131px]' 
-                    />
+                />
+                <motion.img 
+                    initial={{x: -100, y: 0, opacity: 0 }}
+                    animate={{x: 0, y: 0, opacity: 1 }}
+                    transition={{duration: 1, delay: 1.5, type: "tween" }}
+                    className='md:rounded-r-[200px] w-full md:w-[1131px] absolute inset-0' 
+                    src='https://img.freepik.com/free-photo/photo-smiling-dentist-standing-with-arms-crossed-with-her-colleague-showing-okay-sign_496169-1043.jpg?w=1480&t=st=1687696181~exp=1687696781~hmac=d0720d44be8b57e1a90141260e6c3a5277976c74fcce70d6afce26c879101bf7' 
+                    alt='contactus' 
+                    width="1131" 
+                    height="1053" 
+                />
             </div>
             <div className='md:space-y-4'>
                 <h2 className={`${kan.className} text-blue-800 text-2xl pt-3 md:pt-0`}>Contact Us</h2>
@@ -82,17 +97,17 @@ export default function page() {
                     
                         <div className='flex pt-4'>
                             <ul className="flex text-blue-800">
-                                <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
+                                <li className='hover:scale-110 hover:ease-in duration-300 hover:text-[#00d2ff]'>
                                     <a href="https://www.facebook.com" target='_blank' rel='noreferrer' title='Our facebook page'>
                                     <TiSocialFacebookCircular size={50} />
                                     </a> 
                                 </li>
-                                <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
+                                <li className='hover:scale-110 hover:ease-in duration-300 hover:text-[#00d2ff]'>
                                     <a href="https://www.instagram.com" target='_blank' rel='noreferrer' title='Our instagram handle'>
                                     <TbBrandInstagram size={50} />
                                     </a>
                                 </li>
-                                <li className='hover:animate-[pulse_3s_linear_infinite] hover:text-[#00d2ff]'>
+                                <li className='hover:scale-110 hover:ease-in duration-300 hover:text-[#00d2ff]'>
                                     <a href="https://www.twitter.com" target='_blank' rel='noreferrer' title='Our twitter handle'> 
                                     <TiSocialTwitterCircular size={50} />
                                     </a>
@@ -102,6 +117,7 @@ export default function page() {
                     </div>
             </div>
         </div>
+        </PageWrapper>
         
     </div>
   )

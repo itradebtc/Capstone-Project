@@ -1,10 +1,37 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Luckiest_Guy } from 'next/font/google'
+import { PageWrapper } from '../page-wrapper'
+import { motion } from 'framer-motion'
 
 const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
+
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const images = {
+  hidden: { 
+    opacity: 0,
+    x: 30,
+   },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 3,
+    },
+  },
+}; 
 
 
         async function fetchdoctors(){
@@ -35,10 +62,18 @@ weight: ['400']})
           ))
           return (
             <div className='py-10 px-8 md:px-24'>
+              <PageWrapper>
                 <h2 className={`${kan.className} text-center text-4xl py-2 uppercase`}>Our Doctors</h2>
-                <div className='grid md:grid-cols-3 gap-4 text-black  py-7 px-4'>
+                <motion.div
+                 variants={variants}
+                 initial='hidden'
+                 animate='show'
+                 >
+                  <motion.div variants={images} className='grid md:grid-cols-3 gap-4 text-black  py-7 px-4'>
                     {doctorslist}
-                </div>
+                  </motion.div>
+                </motion.div>
+              </PageWrapper>
          </div>
           )
         }

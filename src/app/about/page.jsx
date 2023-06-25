@@ -1,17 +1,49 @@
+"use client"
 import React from 'react'
 import { Luckiest_Guy } from 'next/font/google'
 import Image from 'next/image'
-import pic from '../images/services1.jpg'
+import pic from '../images/aboutuspic.png'
+import { PageWrapper } from '../page-wrapper'
+import { motion } from 'framer-motion'
 
 const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
 
+const variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const images = {
+  hidden: { 
+    opacity: 0,
+    x: 30,
+   },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 3,
+    },
+  },
+}; 
+
 export default function page() {
   return (
     <div className='py-10 px-10 md:px-24'>
+      <PageWrapper>
         <h1 className={`${kan.className} text-center text-blue-900 uppercase text-2xl md:text-4xl`}>Our Services</h1>
         <div className='md:m-7 md:space-y-10 container md:text-[19px]'>
-            <div className='md:flex md:space-x-12'>
+            <motion.div
+              variants={variants}
+              initial='hidden'
+              animate='show'
+              className='md:flex md:space-x-12'>
                 <dl className='space-y-4 md:w-[70%]'>
                   <dd>
                     <span className={`${kan.className} md:text-lg text-blue-900`}>Preventive Dentistry:</span> We believe prevention is the key to maintaining optimal oral health.
@@ -43,13 +75,15 @@ export default function page() {
                     help you regain your smile&#39;s function and aesthetics.
                   </dd>
                 </dl>
+                <motion.div variants={images}>
                 <Image 
                   src={pic} 
                   alt='who is your dentist' 
                   width="420" 
-                  height="200" 
+                  height="400" 
                   className='border-2 rounded-tr-[80px] rounded-bl-[80px]' />
-            </div>
+                </motion.div>
+            </motion.div>
             <p className='pt-4 md:pt-0'>
                 <span className={`${kan.className} md:text-lg text-blue-900`}>At Kelubia&#39;s Dental Care</span>, we prioritize patient comfort and satisfaction. We understand that 
                 visiting the dentist can cause anxiety for some individuals, which is why we strive to create 
@@ -62,6 +96,7 @@ export default function page() {
                 and beautiful smile.
             </p>
         </div>
+      </PageWrapper>
     </div>
   )
 }

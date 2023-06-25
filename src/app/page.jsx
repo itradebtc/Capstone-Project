@@ -1,3 +1,4 @@
+// "use client"
 import Image from 'next/image'
 import {TbDentalBroken} from  'react-icons/tb'
 import {TbDentalOff} from 'react-icons/tb'
@@ -9,6 +10,7 @@ import pica from './images/pexels.jpg'
 import { Luckiest_Guy } from 'next/font/google'
 import Link from 'next/link'
 import Doc from './Doc'
+import { PageWrapper } from './page-wrapper'
 
 const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
@@ -16,6 +18,7 @@ weight: ['400']})
 export default function Home() {
   return (
     <div className='py-4 px-8 md:py-4 md:px-24'>
+      <PageWrapper>
         {/* first div */}
         <div className='flex-col space-y-3 md:grid md:grid-cols-2 md:py-10 md:gap-6 md:space-x-0'>
           <p className={`${kan.className} text-blue-800 md:col-span-2 text-2xl md:text-7xl`}>
@@ -55,28 +58,28 @@ export default function Home() {
           {/* second div */}
 
         <div className='grid grid-cols-2 grid-rows-2 pt-16 gap-3 md:flex md:gap-8 md:py-10 md:w-[1131px] md:pt-0'>
-          <div className='bg-indigo-300 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
+          <div className='bg-indigo-300 grid justify-center items-center text-center md:h-[40vh] container hover:scale-110 hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
             <div className='py-1 md:py-0 space-y-5 px-3'>
             <p className='flex justify-center items-center'> <TbDentalBroken size={30}/> </p>
             <p className='text-lg text-black font-semibold'>Cavity Filling</p>
             <p className='text-sm text-slate-500'>Cavities left untreated, leads to serious dental procedures, including root canals and tooth extractions.</p>
             </div>
           </div>
-          <div className='bg-teal-300 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
+          <div className='bg-teal-300 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:scale-110 hover:ease-in duration-300 hover:text-[#00d2ff]'>
             <div className='space-y-5 px-3'>
             <p className='flex justify-center items-center'> <TbDental size={30} /> </p>
             <p className='text-lg text-black font-semibold'>Fluoride Treatment</p>
             <p className='text-sm text-slate-500'>Fluoride joins the tooth structure when your teeth develop, making them less susceptible to bacteria & cavities.</p>
             </div>
           </div>
-          <div className='bg-lime-200 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
+          <div className='bg-lime-200 grid justify-center items-center text-center md:h-[40vh] container hover:scale-110 hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
             <div className='space-y-5 px-3'>
             <p className='flex justify-center items-center'> <FaTeethOpen size={30} /> </p>
             <p className='text-lg text-black font-semibold'>Dental Prevention</p>
             <p className='text-sm text-slate-500'>Preventive dentistry is the practice of caring for your teeth to keep them healthy, this prevents gum disease.</p>
             </div>
           </div>
-          <div className='bg-rose-200 grid justify-center items-center text-center md:h-[40vh] container hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
+          <div className='bg-rose-200 grid justify-center items-center text-center md:h-[40vh] container hover:scale-110 hover:shadow-2xl hover:ease-in duration-300 hover:text-[#00d2ff]'>
             <div className='space-y-5 px-3'>
             <p className='flex justify-center items-center'> <TbDentalOff size={30} /> </p>
             <p className='text-lg text-black font-semibold'>Tooth Extraction</p>
@@ -168,6 +171,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+      </PageWrapper>
     </div>
   )
 }

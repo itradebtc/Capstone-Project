@@ -28,26 +28,21 @@ const Navbar = () => {
             <div className='hidden sm:flex'>
                 <ul className='hidden sm:flex'>
                     <Link href='/' passHref>
-                    <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Home</li>
+                    <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Home</li>
                     </Link>
                     <Link href='/about' passHref>
-                    <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Our Services</li>
+                    <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Our Services</li>
                     </Link>
                     <Link href='/doctors' passHref>
-                    <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Our Team</li>
-                    </Link>
-                    <Link href='/contact' passHref>
-                    <li className='ml-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>Contact</li>
+                    <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Our Team</li>
                     </Link>
                     <Link href='/checker' passHref>
-                    <li className='ml-10 mr-10 uppercase hover:border-b hover:text-[#00d2ff] text-lg'>
-                            {/* <select className='outline-none'>
-                              <option value="English" selected>En</option>
-                              <option value="French">Fr</option>
-                              <option value="German">De</option>
-                            </select> */}
+                    <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>
                             Health Checker
                     </li>
+                    </Link>
+                    <Link href='/contact' passHref>
+                    <li className='ml-10 mr-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Contact</li>
                     </Link>
                 </ul>
             </div>

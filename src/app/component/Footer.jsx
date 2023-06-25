@@ -31,13 +31,13 @@ export default function Footer() {
                 <p className='text-slate-500'>Follow</p>
                 <p className='flex space-x-3 cursor-pointer'>
                     <a href="https://www.facebook.com" target='_blank' rel='noreferrer' title='Our facebook page'>
-                        <TiSocialFacebookCircular size={25} className='hover:text-[#00d2ff]' />
+                        <TiSocialFacebookCircular size={25} className='hover:text-[#00d2ff] hover:ease-in duration-300 hover:scale-110' />
                     </a>
                     <a href="https://www.instagram.com" target='_blank' rel='noreferrer' title='Our instagram handle'>
-                        <TbBrandInstagram size={25} className='hover:text-[#00d2ff]' />
+                        <TbBrandInstagram size={25} className='hover:text-[#00d2ff] hover:ease-in duration-300 hover:scale-110' />
                     </a>
                     <a href="https://www.twitter.com" target='_blank' rel='noreferrer' title='Our twitter handle'> 
-                        <TiSocialTwitterCircular size={25} className='hover:text-[#00d2ff]' />
+                        <TiSocialTwitterCircular size={25} className='hover:text-[#00d2ff] hover:ease-in duration-300 hover:scale-110' />
                     </a>
                 </p>
             </div>
