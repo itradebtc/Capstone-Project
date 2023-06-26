@@ -1,8 +1,8 @@
 import React from 'react'
 
 export const metadata = {
-    title: 'Our Services',
-    description: 'Our dental service',
+    title: 'Free BMI checker',
+    description: 'Health Checker',
   }
 
 export default function layout({children}) {
