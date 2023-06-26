@@ -78,14 +78,14 @@ const Navbar = () => {
                         Our Team
                     </li>
                     </Link>
-                    <Link href='/contact' passHref>
-                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
-                        Contact
-                    </li>
-                    </Link>
                     <Link href='/checker' passHref>
                     <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
                         Health Checker
+                    </li>
+                    </Link>
+                    <Link href='/contact' passHref>
+                    <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
+                        Contact
                     </li>
                     </Link>
                 </ul>
