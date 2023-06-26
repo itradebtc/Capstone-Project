@@ -87,7 +87,7 @@ export default function page() {
                             </div>
                             <div className='flex items-center space-x-4'>
                                 <MdOutlineMailOutline size={20} className='text-blue-800 hover:text-[#00d2ff]' />
-                                <p><a href={`mailto:${'admin@dental.co.uk'}`}>admin@dental.co.uk</a></p>
+                                <p><a href={`mailto:${'admin@kelubiadentalcare.com'}`}>admin@kelubiadentalcare.com</a></p>
                             </div>
                         </div>
                         <div className='pt-7 space-y-3'>

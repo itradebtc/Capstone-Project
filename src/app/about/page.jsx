@@ -38,7 +38,7 @@ export default function page() {
     <div className='py-10 px-10 md:px-24'>
       <PageWrapper>
         <h1 className={`${kan.className} text-center text-blue-900 uppercase text-2xl md:text-4xl`}>Our Services</h1>
-        <div className='md:m-7 md:space-y-10 container md:text-[19px]'>
+        <div className='md:m-7 md:space-y-10 container md:text-[16px]'>
             <motion.div
               variants={variants}
               initial='hidden'
