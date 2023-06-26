@@ -2,7 +2,7 @@
 import React from 'react'
 import { Luckiest_Guy } from 'next/font/google'
 import Image from 'next/image'
-import pic from '../images/aboutuspic.png'
+import pic from '../images/services.jpg'
 import { PageWrapper } from '../page-wrapper'
 import { motion } from 'framer-motion'
 
@@ -79,8 +79,8 @@ export default function page() {
                 <Image 
                   src={pic} 
                   alt='who is your dentist' 
-                  width="420" 
-                  height="400" 
+                  width="400" 
+                  height="200" 
                   className='border-2 rounded-tr-[80px] rounded-bl-[80px]' />
                 </motion.div>
             </motion.div>
