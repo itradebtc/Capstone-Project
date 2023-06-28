@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import { useState } from 'react'
 import contactpic from '../images/contactus.jpeg'
 import contactpic2 from '../images/contactpic2.png'
 import {TiSocialFacebookCircular} from 'react-icons/ti'
@@ -17,6 +18,25 @@ const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
 
 export default function page() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [response, setResponse] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // You can perform additional validation or data processing here if needed
+
+    // Display the response message
+    setResponse('Thanks for contacting us');
+
+    // Clear the form fields
+    setName('');
+    setEmail('');
+    setMessage('');
+
+  };
   return (
     <div className='px-7 md:px-24 md:py-10'>
         <PageWrapper>
@@ -43,14 +63,14 @@ export default function page() {
             <div className='md:space-y-4'>
                 <h2 className={`${kan.className} text-blue-800 text-2xl pt-3 md:pt-0`}>Contact Us</h2>
                 <p>You have a question? We might just have answers. Send us a message to book an appointment</p>
-                <form action='' className='space-y-4'>
+                <form action='' className='space-y-4' onSubmit={handleSubmit}>
                     <div className='flex flex-col'>
                       <label className='py-2'>Name</label>
-                      <input type="text" placeholder="Enter your Name"  name="name" className="border-b-2 border-gray-25 outline-none" required />
+                      <input type="text" placeholder="Enter your Name"  name="name" className="border-b-2 border-gray-25 outline-none" onChange={(event) => setName(event.target.value)} required />
                     </div>
                     <div className='flex flex-col'>
                       <label className='py-2'>Email</label>
-                      <input type="email" placeholder="Enter a valid email address"  className="border-b-2 border-gray-25 outline-none" required />
+                      <input type="email" placeholder="Enter a valid email address"  className="border-b-2 border-gray-25 outline-none" onChange={(event) => setEmail(event.target.value)} required />
                     </div>
                     <div className='flex flex-col u-form-group u-form-message mb-3'>
                       <label>Message</label>
@@ -58,6 +78,11 @@ export default function page() {
                     </div>
                     <button className='py-3 px-7 rounded-lg w-full md:w-full'>Submit</button>
                 </form>
+
+                {response && (
+                <div className='px-1'>{response}</div>
+                )}
+
             </div>
         </div>
         <div>

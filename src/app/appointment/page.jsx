@@ -1,8 +1,31 @@
+"use client"
 import React from 'react'
 import styles from './app.module.css';
 import { PageWrapper } from '../page-wrapper';
+import { useState } from 'react';
 
 export default function page() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const [response, setResponse] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // You can perform additional validation or data processing here if needed
+
+    // Display the response message
+    setResponse('Your appointment has been booked.');
+
+    // Clear the form fields
+    setName('');
+    setEmail('');
+    setPhone('');
+    setMessage('');
+
+  };
   return (
     <div className='py-2 md:py-0'>
       <PageWrapper>
@@ -22,7 +45,7 @@ export default function page() {
                 </p>
             </div>
             <div className='w-full md:w-[40vw] border-dashed border-2 border-blue-100 rounded-md md:mx-36'>
-                <form action='' className='space-y-4 py-4 px-8'>
+                <form action='' className='space-y-4 py-4 px-8' onSubmit={handleSubmit}>
                     <div className='flex flex-col space-y-3'>
                         <label>Are You a New or Existing Patient? <span className='text-red-900 text-sm'>*</span> </label>
                         <select className='border-l-4 border-l-green-700 bg-blue-50 h-[50px] rounded-md px-5 outline-none'>
@@ -33,22 +56,27 @@ export default function page() {
                     </div>
                     <div className='flex flex-col'>
                       <label className='py-2'>Full Name <span className='text-red-900 text-sm'>*</span></label>
-                      <input type="text" placeholder="Full Name"  name="name" className="border-l-4 border-l-red-600 border-2 px-3 outline-none h-[50px] rounded-md bg-blue-50" required />
+                      <input type="text" placeholder="Full Name"  name="name" className="border-l-4 border-l-red-600 border-2 px-3 outline-none h-[50px] rounded-md bg-blue-50" onChange={(event) => setName(event.target.value)} required />
                     </div>
                     <div className='flex flex-col'>
                       <label className='py-2'>Email <span className='text-red-900 text-sm'>*</span></label>
-                      <input type="email" placeholder="Email"  className="border-l-4 border-l-red-600 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md bg-blue-50" required />
+                      <input type="email" placeholder="Email"  className="border-l-4 border-l-red-600 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md bg-blue-50" onChange={(event) => setEmail(event.target.value)} required />
                     </div>
                     <div className='flex flex-col'>
                       <label className='py-2'>Mobile Phone Number <span className='text-red-900 text-sm'>*</span></label>
-                      <input type="tel" placeholder="Phone" minLength={11} maxLength={11}  className="border-l-4 border-l-red-600 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md bg-blue-50" required />
+                      <input type="tel" placeholder="Phone" minLength={11} maxLength={11}  className="border-l-4 border-l-red-600 border-2 border-gray-25 px-3 outline-none h-[50px] rounded-md bg-blue-50" onChange={(event) => setPhone(event.target.value)} required />
                     </div>
                     <div className='flex flex-col u-form-group u-form-message space-y-2 mb-3'>
                       <label>Why Are You Requesting an Appointment Today? <span className='text-red-900 text-sm'>*</span></label>
-                      <textarea placeholder="" rows="4" cols="50" className="border-l-4 border-l-red-600 border-2 border-gray-25 px-3 py-1 outline-none h-[100px] rounded-md bg-blue-50" required ></textarea>
+                      <textarea placeholder="" rows="4" cols="50" className="border-l-4 border-l-red-600 border-2 border-gray-25 px-3 py-1 outline-none h-[100px] rounded-md bg-blue-50" onChange={(event) => setMessage(event.target.value)} required ></textarea>
                     </div>
                     <button className='py-3 px-7 rounded-md'>Request Appointment</button>
                 </form>
+
+                {response && (
+                <div className='px-7'>{response}</div>
+                )}
+
             </div>
         </div>
       </PageWrapper>
