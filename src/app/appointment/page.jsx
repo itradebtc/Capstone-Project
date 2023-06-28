@@ -4,7 +4,7 @@ import styles from './app.module.css';
 import { PageWrapper } from '../page-wrapper';
 import { useState } from 'react';
 
-export default function page() {
+export default function Page() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');

@@ -17,7 +17,7 @@ import { motion } from 'framer-motion'
 const kan = Luckiest_Guy({subsets: ['latin'],
 weight: ['400']})
 
-export default function page() {
+export default function Page() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
