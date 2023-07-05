@@ -41,7 +41,7 @@ export default function Page() {
     <div className='px-7 md:px-24 md:py-10'>
         <PageWrapper>
         <div className='grid md:flex md:gap-10 py-8'>
-            <div className='overflow-hidden relative'>
+            <div className='overflow-hidden md:relative'>
                 <Image 
                     src={contactpic} 
                     alt='contactus' 
@@ -53,7 +53,7 @@ export default function Page() {
                     initial={{x: -100, y: 0, opacity: 0 }}
                     animate={{x: 0, y: 0, opacity: 1 }}
                     transition={{duration: 1, delay: 1.5, type: "tween" }}
-                    className='md:rounded-r-[200px] w-full md:w-[1131px] absolute inset-0' 
+                    className='md:rounded-r-[200px] w-full md:w-[1131px] hidden md:flex absolute inset-0' 
                     src='https://img.freepik.com/free-photo/photo-smiling-dentist-standing-with-arms-crossed-with-her-colleague-showing-okay-sign_496169-1043.jpg?w=1480&t=st=1687696181~exp=1687696781~hmac=d0720d44be8b57e1a90141260e6c3a5277976c74fcce70d6afce26c879101bf7' 
                     alt='contactus' 
                     width="1131" 

@@ -50,17 +50,18 @@ const Navbar = () => {
                 <GiHamburgerMenu size={25} className='hover:text-[#00d2ff]' />
             </div>
         </div>
+
         <div className={
             menuOpen
             ? 'fixed left-0 top-0 w-[65%] sm:hidden h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
             : 'fixed left-[100%] top-0 p-10 ease-in duration-500'
         }
         >
-        <div className='flex w-full items-center justify-end'>
-            <div onClick={handleNav} className='cursor-pointer'>
-                <MdOutlineClose size={25} className='hover:text-[#00d2ff]'/>
+            <div className='flex w-full items-center justify-end'>
+                <div onClick={handleNav} className='cursor-pointer'>
+                    <MdOutlineClose size={25} className='hover:text-[#00d2ff]'/>
+                </div>
             </div>
-        </div>
             <div className='flex-col py-4'>
                 <ul>
                     <Link href='/' passHref>
