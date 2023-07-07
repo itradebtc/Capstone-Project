@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation} from "swiper";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -13,15 +13,15 @@ import Link from 'next/link';
 export default function Doctorswipe() {
   return (
     <Swiper
-      slidesPerView={3}
+      slidesPerView={4}
       centeredSlides={true}
       spaceBetween={10}
       grabCursor={true}
-      pagination={{
-        clickable: true,
-      }}
+      // pagination={{
+      //   clickable: true,
+      // }}
       navigation={true}
-      modules={[Pagination, Navigation]}
+      modules={[Navigation]}
       // className="mySwiper"
       className="md:w-[80%] justify-center items-center"
     >
