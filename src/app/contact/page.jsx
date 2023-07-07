@@ -47,7 +47,7 @@ export default function Page() {
                     alt='contactus' 
                     width="1131" 
                     height="1053" 
-                    className='md:rounded-r-[200px] w-full md:w-[1131px]' 
+                    className='md:rounded-r-[200px] w-80 md:w-[1131px]' 
                 />
                 <motion.img 
                     initial={{x: -100, y: 0, opacity: 0 }}
@@ -60,7 +60,7 @@ export default function Page() {
                     height="1053" 
                 />
             </div>
-            <div className='md:space-y-4'>
+            <div className='md:space-y-4 w-80 md:w-fit'>
                 <h2 className={`${kan.className} text-blue-800 text-2xl pt-3 md:pt-0`}>Contact Us</h2>
                 <p>You have a question? We might just have answers. Send us a message to book an appointment</p>
                 <form action='' className='space-y-4' onSubmit={handleSubmit}>

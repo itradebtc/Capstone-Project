@@ -35,10 +35,10 @@ const images = {
 
 export default function page() {
   return (
-    <div className='py-10 px-10 md:px-24'>
+    <div className='py-10 px-4 md:px-24'>
       <PageWrapper>
-        <h1 className={`${kan.className} text-center text-blue-900 uppercase text-2xl md:text-4xl`}>Our Services</h1>
-        <div className='md:m-7 md:space-y-10 container md:text-[16px]'>
+        <h1 className={`${kan.className} text-center text-blue-900 uppercase text-2xl md:text-4xl pb-4 md:pb-0`}>Our Services</h1>
+        <div className='md:m-7 md:space-y-10 container text-[12px] md:text-[16px]'>
             <motion.div
               variants={variants}
               initial='hidden'
@@ -81,7 +81,7 @@ export default function page() {
                   alt='who is your dentist' 
                   width="400" 
                   height="200" 
-                  className='border-2 rounded-tr-[80px] rounded-bl-[80px]' />
+                  className='border-2 md:rounded-tr-[80px] md:rounded-bl-[80px]' />
                 </motion.div>
             </motion.div>
             <p className='pt-4 md:pt-0'>

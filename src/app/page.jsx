@@ -22,7 +22,7 @@ export default function Home() {
         {/* first div */}
         <div className='flex-col space-y-3 md:grid md:grid-cols-2 md:py-20 md:gap-6 md:space-x-0'>
           <p className={`${kan.className} text-blue-800 md:col-span-2 text-2xl md:text-7xl`}>
-            we find the best <br /> doctors for your dental <br /> surgery
+            we find the best <br className='hidden md:flex' /> doctors for your dental <br className='hidden md:flex' /> surgery
           </p>
           <p className='text-[12px] md:text-[18px] text-slate-800'>
               Welcome to Kelubia&#39;s Dental Care, your premier destination for comprehensive dental care. 
@@ -96,8 +96,8 @@ export default function Home() {
             </div>
             <div className='text-slate-500 text-[12px] md:text-[16px] pt-5 md:pt-8'>
                 <p>
-                  Dentistry isn&#39;t just our job it&#39;s our passion! At Kelubia&#39;s Dental Care,<br /> 
-                  we do more than just treat our patients, we treat our patients with <br /> respect. 
+                  Dentistry isn&#39;t just our job it&#39;s our passion! At Kelubia&#39;s Dental Care,<br className='hidden md:flex' /> 
+                  we do more than just treat our patients, we treat our patients with <br className='hidden md:flex' /> respect. 
                   Watch our video to learn more.
                 </p>
             </div>
@@ -117,7 +117,7 @@ export default function Home() {
         <div className='pt-7 md:grid md:grid-cols-2 md:grid-rows-2 md:pt-24 md:w-full md:gap-7 md:justify-center md:items-center'>
           <div >
             <p className={`${kan.className} py-4 text-slate-500 text-sm`}>----- Post a question</p>
-            <h2 className='text-lg md:text-4xl pb-6'>Post your questions <br /> our experts are ready to answer</h2>
+            <h2 className='text-lg md:text-4xl pb-6'>Post your questions <br className='hidden md:flex' /> our experts are ready to answer</h2>
             <p className='text-[12px] md:text-[16px] text-slate-500 pb-6'>We are available 24/7 to ensure 100% care</p>
           </div>
           <div className='row-span-2'>
@@ -148,12 +148,12 @@ export default function Home() {
 
         <div className='grid md:grid-cols-2 pt-10 md:w-full'>
             <div className='text-lg md:text-4xl'>
-                <h2>Meet Our Qualified Doctors <br />& Get Treatment </h2>
+                <h2>Meet Our Qualified Doctors <br className='hidden md:flex' />& Get Treatment </h2>
             </div>
             <div className='text-[12px] md:text-[16px] text-slate-500 py-6 md:py-8'>
                 <p>
-                  Meet our diverse and highly skilled team of dental doctors. With expertise <br />
-                  in various specialties. They are dedicated, compassionate, and committed <br />
+                  Meet our diverse and highly skilled team of dental doctors. With expertise <br className='hidden md:flex' />
+                  in various specialties. They are dedicated, compassionate, and committed <br className='hidden md:flex' />
                    to ensure top-notch dental services for our community.
                 </p>
             </div>

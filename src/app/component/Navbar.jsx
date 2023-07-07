@@ -31,10 +31,10 @@ const Navbar = () => {
                     <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Home</li>
                     </Link>
                     <Link href='/about' passHref>
-                    <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Our Services</li>
+                    <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Services</li>
                     </Link>
                     <Link href='/doctors' passHref>
-                    <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Our Team</li>
+                    <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>Our Doctors</li>
                     </Link>
                     <Link href='/checker' passHref>
                     <li className='ml-10 uppercase hover:ease-in duration-300 hover:scale-110 hover:text-[#00d2ff] text-lg'>
@@ -71,12 +71,12 @@ const Navbar = () => {
                     </Link>
                     <Link href='/about' passHref>
                     <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
-                        Our Services
+                        Services
                     </li>
                     </Link>
                     <Link href='/doctors' passHref>
                     <li onClick={() => setMenuOpen(false)} className='py-4 cursor-pointer hover:text-[#00d2ff]'>
-                        Our Team
+                        Our Doctors
                     </li>
                     </Link>
                     <Link href='/checker' passHref>
