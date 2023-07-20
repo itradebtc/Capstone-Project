@@ -27,10 +27,10 @@ export default function Footer() {
             </div>
             <div className='md:space-y-2'>
                 <p className='text-slate-500'>Support</p>
-                <Link href='../privacy'>
+                <Link href='../privacy' passHref>
                     <p className='text-[12px] md:text-sm'>privacy policy</p>
                 </Link>
-                <Link href='../terms&condition'>
+                <Link href='../terms&condition' passHref>
                     <p className='text-[12px] md:text-sm'>Terms & condition</p>
                 </Link>
                 <p className='text-slate-500'>Follow</p>
