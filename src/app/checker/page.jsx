@@ -23,14 +23,13 @@ event.preventDefault()
   if (weight === 0 || height === 0) {
     alert('Please enter a valid weight and height')
   } else {
-    let bmi = (weight / (height * height) * 703)
-    setBmi(bmi.toFixed(1))
+    let bmi = (weight / (height / 100) ** 2)
+    setBmi(bmi.toFixed(2))
 
-    // Logic for message
-
-    if (bmi < 25) {
+    
+    if (bmi < 18.5) {
       setMessage('You are underweight')
-    } else if (bmi >= 25 && bmi < 30) {
+    } else if (bmi >= 18.5 && bmi < 24.9) {
       setMessage('You are a healthy weight')
     } else {
       setMessage('You are overweight')
@@ -42,10 +41,11 @@ let imgSrc;
 
   if (bmi < 1) {
     imgSrc = require('../images/qm.png')
-  } else {
-  if(bmi < 25) {
+  } 
+  else {
+  if(bmi < 18.5) {
     imgSrc = require('../images/underweight.png')
-  } else if (bmi >= 25 && bmi < 30) {
+  } else if (bmi >= 18.5 && bmi < 24.9) {
     imgSrc = require('../images/healthy.png')
   } else {
     imgSrc = require('../images/overweight.png')
@@ -82,16 +82,16 @@ let imgSrc;
           <div className={styles.bmi}>
             <form onSubmit={calcBmi} className='m-[5vh] md:pr-48 md:m-[8vh] md:py-[1vh] space-y-8'>
               <div className='border-b-2 border-slate-400 md:w-full'>
-                <label className='text-xs uppercase'>Weight (lbs)</label>
+                <label className='text-xs uppercase'>Weight (kg)</label>
                 <input value={weight} onChange={(e) => setWeight(e.target.value)} 
                 className='text-3xl bg-inherit outline-none'
-                placeholder='| Height in pounds' required/>
+                placeholder='| Weight in kilogram' required/>
               </div>
               <div className='border-b-2 border-slate-400 md:w-full'>
-                <label className='text-xs uppercase'>Height (in)</label>
+                <label className='text-xs uppercase'>Height (cm)</label>
                 <input value={height} onChange={(event) => setHeight(event.target.value)} 
                 className='text-3xl bg-inherit outline-none' 
-                placeholder='| Height in inches' required/>
+                placeholder='| Height in centimeters' required/>
               </div>
               <div className='space-y-1'>
                 <button className='w-full uppercase py-2 px-4 bg-blue-800 rounded-md' type='submit'>Check Bmi</button>

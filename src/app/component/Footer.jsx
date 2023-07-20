@@ -3,6 +3,7 @@ import {TiSocialFacebookCircular} from 'react-icons/ti'
 import {TbBrandInstagram} from 'react-icons/tb'
 import {TiSocialTwitterCircular} from 'react-icons/ti'
 import {TiSocialVimeoCircular} from 'react-icons/ti'
+import Link from 'next/link'
 
 export default function Footer() {
   return (
@@ -26,8 +27,12 @@ export default function Footer() {
             </div>
             <div className='md:space-y-2'>
                 <p className='text-slate-500'>Support</p>
-                <p className='text-[12px] md:text-sm'>privacy policy</p>
-                <p className='text-[12px] md:text-sm'>Terms & condition</p>
+                <Link href='../privacy'>
+                    <p className='text-[12px] md:text-sm'>privacy policy</p>
+                </Link>
+                <Link href='../terms&condition'>
+                    <p className='text-[12px] md:text-sm'>Terms & condition</p>
+                </Link>
                 <p className='text-slate-500'>Follow</p>
                 <p className='flex space-x-3 cursor-pointer'>
                     <a href="https://www.facebook.com" target='_blank' rel='noreferrer' title='Our facebook page'>
