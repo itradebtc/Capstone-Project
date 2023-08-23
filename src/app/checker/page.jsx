@@ -58,7 +58,7 @@ let imgSrc;
   }
 
   return (
-    <div className='h-[100vh] md:h-[130vh] px-10 bg-[#00d2ff]'>
+    <div className='w-auto md:h-[130vh] px-10 bg-[#00d2ff]'>
       <PageWrapper>
       <div>
         <h2 className={`${kan.className} text-4xl text-blue-800 pt-8`}>Adult BMI Calculator</h2>
@@ -84,13 +84,13 @@ let imgSrc;
               <div className='border-b-2 border-slate-400 md:w-full'>
                 <label className='text-xs uppercase'>Weight (kg)</label>
                 <input value={weight} onChange={(e) => setWeight(e.target.value)} 
-                className='text-3xl bg-inherit outline-none'
-                placeholder='| Weight in kilogram' required/>
+                className='text-xl bg-inherit outline-none'
+                placeholder='| Weight in kilograms' required/>
               </div>
               <div className='border-b-2 border-slate-400 md:w-full'>
                 <label className='text-xs uppercase'>Height (cm)</label>
                 <input value={height} onChange={(event) => setHeight(event.target.value)} 
-                className='text-3xl bg-inherit outline-none' 
+                className='text-xl bg-inherit outline-none' 
                 placeholder='| Height in centimeters' required/>
               </div>
               <div className='space-y-1'>

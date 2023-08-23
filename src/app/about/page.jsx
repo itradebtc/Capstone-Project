@@ -2,7 +2,7 @@
 import React from 'react'
 import { Luckiest_Guy } from 'next/font/google'
 import Image from 'next/image'
-import pic from '../images/services.jpg'
+import pic from '../images/aboutuspic.png'
 import { PageWrapper } from '../page-wrapper'
 import { motion } from 'framer-motion'
 

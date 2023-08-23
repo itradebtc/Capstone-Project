@@ -11,6 +11,10 @@ export default function Page() {
   const [message, setMessage] = useState('');
   const [response, setResponse] = useState('');
 
+  // let reload = () => {
+  //   window.location.reload()
+  // }
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
