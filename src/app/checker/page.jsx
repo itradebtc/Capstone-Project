@@ -104,7 +104,7 @@ let imgSrc;
               <p className={styles.pee} >{message}</p>
             </div>
 
-            <div className='pl-28 md:flex hidden'>
+            <div className='pl-28'>
               <Image src={imgSrc} alt='bmiimage' width={50} height={50} />
             </div>
           </div>
